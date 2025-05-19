@@ -11,11 +11,16 @@ y = df[["preco"]]
 
 model.fit(x, y)
 
-st.title("Pizza Price Predictor")
+st.set_page_config(page_title="Pizza Price Predictor", page_icon="🍕", layout="centered")
+
+st.title("🍕 Pizza Price Predictor")
+st.write("Este sistema estima o preço de uma pizza com base no seu diâmetro")
 st.divider()
 
-diametro = st.number_input("Digite o tamanho do diâmetro da Pizza: ")
+diametro = st.number_input("📏 Tamanho do diâmetro da pizza (cm):", min_value=0.0, step=0.5)
 
-if diametro:
+if diametro > 0:
     predicted_price = model.predict([[diametro]])[0][0]
-    st.write(f"O valor da pizza com diâmetro de {diametro} é de R${predicted_price}")
+    st.success(f"💰 Preço estimado: **R$ {predicted_price:.2f}**")
+else:
+    st.info("Por favor, insira um valor de diâmetro maior que zero.")

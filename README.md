@@ -8,7 +8,7 @@ This project uses Machine Learning to train a model that predicts the price of a
 
 1 - Clone the repository using the following command:
 ```bash
-   git clone https://github.com/sarahzxwy/ml-pizza-price-predictor.git
+  git clone https://github.com/sarahzxwy/ml-pizza-price-predictor.git
    ```
 
 2 - Navigate to the project folder:
@@ -23,13 +23,24 @@ This project uses Machine Learning to train a model that predicts the price of a
 
 4 - Activate the virtual environment:
 ```bash
- poetry shell
+  poetry shell
    ```
 
 5 - Run the Streamlit app:
 ```bash
-streamlit run src/ml_pizza_price_predictor/app.py
+  streamlit run src/ml_pizza_price_predictor/app.py
    ```
+
+<br>
+
+## 🖥️ Application Overview
+
+⚠️ *Note: the user interface is in Brazilian Portuguese.*
+
+When you open the application, you'll see an input field where you can enter the pizza's diameter in centimeters or adjust the value using the "+" and "−" buttons. The system will then display the predicted price in Brazilian reais (R$).
+
+![Pizza Price Predictor Interface](assets/images/pizza-price-predictor-interface.jpg)
+
 
 <br>
 
@@ -55,6 +66,9 @@ The system was developed using the following technologies:
 
 ```
 ml-pizza-price-predictor/
+├── assets/
+│   └── images/
+│       └── pizza-price-predictor-interface.jpg
 ├── dataset/
 │   └── pizzas.csv
 ├── src/

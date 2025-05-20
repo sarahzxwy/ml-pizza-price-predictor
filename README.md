@@ -87,7 +87,7 @@ ml-pizza-price-predictor/
 **Code Structure:**
 
 - `app.py`:  Loads pizza data, trains a linear regression model, and provides a user interface to predict pizza prices based on diameter input.
-- `tests.ipybn`: Used for exploratory data analysis and initial testing of the linear regression model with pizza data.
+- `tests.ipynb`: Used for exploratory data analysis and initial testing of the linear regression model with pizza data.
 
 <br>
 
